@@ -1,0 +1,8 @@
+query VulnerabilitiesByPurl($purls: [String!]!){
+  vulnerabilitiesByPackage(context: {}, packageUrls: $purls){
+    purl
+    vulnerabilities {
+      sourceId
+    }
+  }
+}
